@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:ci": "playwright test --reporter=line"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vishnu2407/Typescript.git"
