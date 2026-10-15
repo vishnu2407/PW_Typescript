@@ -63,3 +63,11 @@ jobs:
 
       - name: Run tests in Docker
         run: docker run --rm typescript-playwright:test
+
+      - name: Upload Docker test report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-playwright-report
+          path: playwright-report/
+          retention-days: 14
