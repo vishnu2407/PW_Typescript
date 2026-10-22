@@ -1,6 +1,4 @@
-import playwright = require('@playwright/test');
-
-const { test, expect } = playwright;
+import { test, expect } from '@playwright/test';
 
 test('verify the Flipkart website title', async ({ page }) => {
   await page.goto('https://www.flipkart.com/');
