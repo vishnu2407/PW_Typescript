@@ -4,6 +4,8 @@ This project runs Playwright browser tests.
 
 npx playwright test --ui
 
+npx playwright test --debug
+
 To display the browser UI while tests run:
 npm.cmd test -- --headed
 

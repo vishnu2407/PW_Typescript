@@ -16,7 +16,7 @@ test('verify the Amazon website title', async ({ page }) => {
   await expect(searchBox).toBeVisible();
 
   // Step 5: Enter the product name and search
-  await searchBox.fill('iPhone 17 Pro Max');
+  await searchBox.fill('iPhone 17 Pro Cosmic Orange');
   await searchBox.press('Enter');
 
   // Step 6: Verify that Amazon navigated to search results
